@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="bootstrap.css" rel="stylesheet" type="text/css">
+  <script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+</head>
+<body style="width=1080px; margin=0 auto;background:url(1619726.jpg);no repeat center scroll; background-size:cover" oncontextmenu="return false">
+<div class="alert alert-warning alert-dismissible" role="alert" style="text-align:center;">
+  <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"></span></button> -->
+  <img src="ezgif.com-add-text (1).gif" alt="Image not found">
+  <!-- <strong>Alert!</strong><b> IF your page appears hazy, refresh the page</b> -->
+</div>
+  <br><br><h2 style="color:orange;text-align:center;">WELCOME TO BBB INTERNATIONAL NET BANKING</h2><br><br><br><br><br><br>
+<form class="form-inline" align="center" method="POST" action="logging.php">
+  
+  <div class="form-group">
+    <label><font color="orange"><strong>Username:</strong></label></font>
+        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Username" name="un">
+  <br>
+  <br>
+
+    <label><font color="orange">Password:</label></font>
+    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" name="Password">
+  </div>
+  <br>
+  <br>
+  
+  <br>
+  <input name="amount" type="hidden" value="2399" checked="checked"></input>
+  <button type="submit" class="btn btn-default" name="submit">Sign in</a></button>&nbsp &nbsp 
+  <a href="cancel.php" class="btn btn-danger" >Cancel</button></a>
+
+</form>
+<div class="navbar navbar-light navbar-fixed-bottom" style="background-color: white;">
+<!--  <div class="container"> -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#FFFFFF;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li style="text-color:black"><b>Copyrights &copy 2016</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+      <li> <a style="color:black" href="privacy.html" target="_blank" class="smoothScroll"> Privacy statement</a></li>
+      <li> <a style="color:black" href="disclosure.html" target="_blank" class="smoothScroll">Disclosure</a></li>
+      <li> <a style="color:black" href="terms.html" target="_blank" class="smoothScroll">Terms and conditions</a></li> 
+</body>
+</html>

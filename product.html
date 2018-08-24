@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style>
+	.hidden{
+		display: none;
+	}
+	.unhidden{
+		display: block;
+	}
+	</style>
+	<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+	<script type="text/javascript">
+		function unhide(clickedButton,divID)
+		{
+			var item = document.getElementById(divID);
+			if(item)
+			{
+				item.className=(item.className=='hidden')?'unhidden':'hidden';
+			}
+			document.getElementById(otherDivId).className = 'hidden';
+			//document.getElementById(clickedButton).className = 'hidden';
+		}
+
+	</script>
+
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<title>BBB-shopping.com</title>
+		<h1 align="center"><font color="blue" size="40"><strong>BBB-SHOPPING</strong></font></h1>
+</head>
+<body oncontextmenu="return false">
+	<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="_20160409_211400.jpg" >
+    </a>
+  </div>
+  <div class="media-body"><br><br><br><br><br><br>
+    <h4 class="media-heading">FLOATER</h4>
+    Addidas Men Grey Escape 2.0 Sports Sandals<br><br>Rs.2399<br><br>
+    <button class="btn btn-warning"  id="buy" onClick="unhide('buy','pay')">BUY</button>
+<div id="pay" class="hidden"><br><br>
+	<form method="POST" action="logging.html">
+	<input name="amount" type="radio" value="2399" checked="checked"><font size="5px">&nbsp PAY using BBB Bank</font></input><br><br>
+	<button class="btn btn-primary" type="submit">PAY</button>
+</form>
+</div>
+
+  </div>
+</div>
+</body>
+</html>
