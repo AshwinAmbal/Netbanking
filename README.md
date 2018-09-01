@@ -6,4 +6,4 @@ Features include:
 2. Handled various threats like SQL Injection
 3. Included session management and AES Encryption for security while transferring funds.
 
-Note: This project used msql and not mysqli. Use XAMPP with appropriate version to run the above code without errors. Refer to output screenshots from the screenshots folder to build the database accordingly.
+Note: This project uses msql and not mysqli. Use XAMPP with appropriate version to run the above code without errors. Refer to output screenshots from the screenshots folder to build the database accordingly.
